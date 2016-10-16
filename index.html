@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>高响应比优先调度算法</title>
+    <link href="css/style.css"  rel="stylesheet"/>
+</head>
+<body>
+<h2 id="lzx">20143223李子翔</h2>
+<div id="box" >
+        <div id="left">
+            <h4 id="info">创建任务数：
+                <span id="inPut">
+                    <input type="text" title="至多5个！" id="vals" value="3">
+                </span>
+                <button id="start">开始</button>
+            </h4>
+            <div id="dynamics">
+                <ul id="list">
+                    <li>
+                        <span>等待时间</span>
+                        <span>服务时间</span>
+                        <span>优先权</span>
+                    </li>
+                    <li><h3>A:</h3><span>3s</span><span> 3s</span><span> 3</span></li>
+                    <li><h3>B:</h3><span>3s</span><span> 3s</span><span> 3</span></li>
+                    <li><h3>C:</h3><span>3s</span><span> 3s</span><span> 3</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 id="time">执行下一进程 <br> <br>剩余时间(秒)</h3>
+
+        <div id="right1">0</div>
+
+        <div id="right2">0</div>
+
+        <div id="bottom"><a href="javascript:void (0)" id="danCi">A</a></div>
+
+        <h3 id="task">任务进程↑</h3>
+
+        <button id="restart">重新开始</button>
+</div>
+<h3 id="title">高响应比优先调度算法</h3>
+<script type="text/javascript" src="javascript/myHRRN.js" charset="utf-8"></script>
+
+</body>
+</html>
